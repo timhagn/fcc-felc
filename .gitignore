@@ -1,5 +1,6 @@
-# Ignore default dirs
+# Ignore node dir and push file
 node_modules
+gp
 
 # IntelliJ project files
 .idea
