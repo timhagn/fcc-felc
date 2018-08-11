@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>FCC: Build a Markdown Previewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+          crossorigin="anonymous">
+
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Rubik:400,500);
+        body {
+            margin: 0;
+        }
+        a {
+            color: #ccc;
+            cursor: pointer;
+        }
+        a:hover {
+            background-color: #bbb;
+        }
+        .Home-intro {
+            padding-top: 1rem;
+            color: #ccc;
+        }
+        #wrapper {
+            background-color: #333;
+            color: #333;
+            font-family: 'Rubik', sans-serif;
+            font-weight: 300;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .text-box {
+            border-radius: 15px;
+            border-style: outset;
+            position: relative;
+            margin: 5% auto auto auto;
+            width: auto;
+            padding: 40px 50px;
+            display: block;
+            background-color: #ccc;
+        }
+        #preview {
+            align-content: normal;
+            justify-content: normal;
+            padding: 1rem;
+            min-height: 40vh;
+            min-width: 75vw;
+            background: whitesmoke;
+        }
+        #preview blockquote {
+            border-left: 3px solid #224B4B;
+            color: #224B4B;
+            padding-left: 5px;
+            margin-left: 25px;
+        }
+
+        #preview code {
+            background: white;
+            padding: 1px 4px 2px 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        #preview pre {
+            background: white;
+            padding: 5px 0 5px 5px;
+        }
+
+        #preview table {
+            border-collapse: collapse;
+        }
+
+        #preview td,
+        #preview th {
+            border: 2px solid #224B4B;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    </style>
+
+
+</head>
+
+<body translate="no">
+
+<div id="root"></div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react/16.4.0/umd/react.development.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.0/umd/react-dom.development.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.0-rc.1/redux.js'></script>
+<script src='https://unpkg.com/react-redux@latest/dist/react-redux.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/redux-thunk/2.3.0/redux-thunk.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.6.2/prop-types.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/marked/0.4.0/marked.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js'></script>
+<script src='dist/rr_md.js'></script>
+</body>
+</html>

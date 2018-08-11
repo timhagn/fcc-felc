@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>FCC: Build a JavaScript Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+          crossorigin="anonymous">
+
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Rubik:400,500);
+        body {
+            margin: 0;
+        }
+        #wrapper {
+            background-color: #333;
+            color: #333;
+            font-family: 'Rubik', sans-serif;
+            font-weight: 300;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        #calculator {
+            border-radius: 15px;
+            border-style: outset;
+            position: relative;
+            margin: 5% auto auto auto;
+            width: auto;
+            padding: 40px 50px;
+            display: inline-block;
+            background-color: #ccc;
+        }
+        #display {
+            position: relative;
+            margin: 5% auto auto auto;
+            width: auto;
+            padding: 30px;
+            display: block;
+            background-color: #fff;
+            text-align: right;
+        }
+        #pads {
+            display: inline-flex;
+        }
+        .num-pad {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            width: 210px;
+        }
+        .num-pad button:last-of-type {
+            flex-grow: 1;
+        }
+        .math-pad, .act-pad {
+            margin-left: 0.8rem;
+            width: 140px;
+            height: 140px;
+        }
+        .act-pad {
+            display: flex;
+            flex-direction: row;
+        }
+        .calc-button {
+            border-radius: 3px;
+            border-style: outset;
+            color: #000;
+            background-color: #ccc;
+            outline: none;
+            font-size: 0.85em;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+            padding: 18px 20px;
+            margin: 0.5rem;
+            opacity: 1;
+            cursor: pointer;
+            min-width: 54px;
+        }
+        .calc-button:hover {
+            background-color: #bbb;
+        }
+    </style>
+
+
+</head>
+
+<body translate="no">
+
+<div id="root"></div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react/16.4.0/umd/react.development.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.0/umd/react-dom.development.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.0-rc.1/redux.js'></script>
+<script src='https://unpkg.com/react-redux@latest/dist/react-redux.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/redux-thunk/2.3.0/redux-thunk.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.6.2/prop-types.js'></script>
+<script src='dist/rr_calc.js'></script>
+</body>
+</html>

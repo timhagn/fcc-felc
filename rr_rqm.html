@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>FCC: Random Quote Machine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+          crossorigin="anonymous">
+
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Rubik:400,500);
+        body, * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            vertical-align: baseline;
+        }
+        div {
+            position: relative;
+            z-index: 2;
+        }
+        a {
+            height: 25px;
+            border-radius: 3px;
+            border-style: outset;
+            color: #000;
+            background-color: #ccc;
+            outline: none;
+            font-size: 0.85em;
+            text-decoration: none;
+            padding: 8px 18px 6px 18px;
+            margin-top: 30px;
+            opacity: 1;
+            cursor: pointer;
+        }
+        a:hover {
+            background-color: #bbb;
+        }
+        .Home {
+            text-align: center;
+        }
+        .Home-intro {
+            padding-top: 2rem;
+            color: #ccc;
+            font-size: large;
+        }
+        h2 {
+            padding-bottom: 1rem;
+        }
+        #wrapper {
+            background-color: #333;
+            color: #333;
+            font-family: 'Rubik', sans-serif;
+            font-weight: 400;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #quote-box {
+            border-radius: 15px;
+            border-style: outset;
+            position: relative;
+            margin: 5% auto auto auto;
+            width: 450px;
+            padding: 40px 50px;
+            display: table;
+            background-color: #ccc;
+        }
+        #quote-box #text {
+            text-align: center;
+            width: 450px;
+            height: auto;
+            clear: both;
+            font-weight: 500;
+            font-size: 1.75em;
+        }
+        #quote-box #text i {
+            font-size: 1.0em;
+            margin-right: 0.4em;
+        }
+        #quote-box #author {
+            width: 450px;
+            height: auto;
+            clear: both;
+            padding-top: 20px;
+            font-size: 1em;
+            text-align: right;
+        }
+        #quote-box .buttons {
+            width: 450px;
+            margin: auto;
+            display: block;
+        }
+        #quote-box .buttons .button {
+            height: 38px;
+            border-style: outset;
+            border-radius: 7px;
+            color: #fff;
+            background-color: #333;
+            outline: none;
+            font-size: 0.85em;
+            padding: 8px 18px 6px 18px;
+            margin-top: 30px;
+            opacity: 1;
+            cursor: pointer;
+        }
+        #quote-box .buttons .button:hover {
+            opacity: 0.9;
+        }
+        #quote-box .buttons .button#tweet-quote {
+            float: left;
+            padding: 0px;
+            padding-top: 8px;
+            text-align: center;
+            font-size: 1.2em;
+            margin-right: 5px;
+            height: 30px;
+            width: 40px;
+        }
+        #quote-box .buttons .button#new-quote {
+            float: right;
+        }
+
+    </style>
+
+
+</head>
+
+<body translate="no">
+
+<div id="root"></div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react/16.4.0/umd/react.development.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.0/umd/react-dom.development.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.0-rc.1/redux.js'></script>
+<script src='https://unpkg.com/react-redux@latest/dist/react-redux.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/redux-thunk/2.3.0/redux-thunk.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.6.2/prop-types.js'></script>
+<script src='dist/rr_rqm.js'></script>
+</body>
+</html>

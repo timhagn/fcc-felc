@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>FCC: Build a Pomodoro Clock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+          crossorigin="anonymous">
+
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Rubik:400,500);
+        body {
+            margin: 0;
+        }
+        #wrapper {
+            background-color: #333;
+            color: #333;
+            font-family: 'Rubik', sans-serif;
+            font-weight: 300;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        #pomodoro {
+            border-radius: 15px;
+            border-style: outset;
+            position: relative;
+            margin: 0.5rem auto;
+            width: auto;
+            padding: 30px;
+            display: inline;
+            background-color: #ccc;
+        }
+        .main-title {
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+            font-size: 24pt;
+            margin-bottom: 1rem;
+        }
+        #session-length,
+        #break-length {
+            position: relative;
+            padding: 8px 10px;
+            margin: 0.5rem;
+            display: block;
+            background-color: #fff;
+            text-align: center;
+            font-size: 24pt;
+            min-width: 2.5rem;
+        }
+        .length-control,
+        .timer-control {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border-radius: 12px;
+            border-style: groove;
+        }
+        #break-label, #session-label {
+            flex-grow: 1;
+            width: 100%;
+            text-align: center;
+        }
+        #timer-label, #break-label, #session-label {
+            font-size: 18pt;
+            margin-top: 0.5rem;
+        }
+        .timer-wrapper {
+            text-align: center;
+            border-radius: 12px;
+            border-style: ridge;
+            background: #224b4b;
+            color: white;
+        }
+        .timer-break {
+            background: orangered;
+        }
+        #time-left {
+            font-size: 24pt;
+            margin: 0.5rem;
+        }
+        .developer {
+            font-size: small;
+            text-align: center;
+            margin-top: 0.8rem;
+        }
+        .btn-level {
+            border-radius: 3px;
+            border-style: outset;
+            color: #000;
+            background-color: #ccc;
+            outline: none;
+            font-size: 24pt;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 10px;
+            margin: 0.5rem;
+            opacity: 1;
+            cursor: pointer;
+            min-width: 54px;
+        }
+        .btn-level:hover {
+            background-color: #bbb;
+        }
+    </style>
+
+
+</head>
+
+<body translate="no">
+
+<div id="root"></div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react/16.4.0/umd/react.development.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.0/umd/react-dom.development.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.0-rc.1/redux.js'></script>
+<script src='https://unpkg.com/react-redux@latest/dist/react-redux.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/redux-thunk/2.3.0/redux-thunk.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.6.2/prop-types.js'></script>
+<script src='dist/rr_pomo.js'></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
