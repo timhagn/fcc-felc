@@ -433,4 +433,3 @@ var AppContainer = connect(mapStateToProps, mapDispatchToProps)(Calculator);
 ReactDOM.render(React.createElement(Provider, {
   store: store
 }, React.createElement(AppContainer, null)), document.getElementById('root'));
-//# sourceMappingURL=rr_calc.js.map

@@ -308,4 +308,3 @@ var AppContainer = connect(mapStateToProps, mapDispatchToProps)(DrumMachine);
 ReactDOM.render(React.createElement(Provider, {
   store: store
 }, React.createElement(AppContainer, null)), document.getElementById('root'));
-//# sourceMappingURL=rr_drumm.js.map

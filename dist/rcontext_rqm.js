@@ -194,4 +194,3 @@ var QuoteConsumer = function QuoteConsumer(props) {
 };
 
 ReactDOM.render(React.createElement(QuoteProvider, null, React.createElement(QuoteConsumer, null)), document.getElementById('root'));
-//# sourceMappingURL=rcontext_rqm.js.map

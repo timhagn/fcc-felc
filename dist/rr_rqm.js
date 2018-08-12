@@ -289,4 +289,3 @@ var AppContainer = connect(mapStateToProps, mapDispatchToProps)(RandomQuotes);
 ReactDOM.render(React.createElement(Provider, {
   store: store
 }, React.createElement(AppContainer, null)), document.getElementById('root'));
-//# sourceMappingURL=rr_rqm.js.map

@@ -501,4 +501,3 @@ var AppContainer = connect(mapStateToProps, mapDispatchToProps)(Pomodoro);
 ReactDOM.render(React.createElement(Provider, {
   store: store
 }, React.createElement(AppContainer, null)), document.getElementById('root'));
-//# sourceMappingURL=rr_pomo.js.map
